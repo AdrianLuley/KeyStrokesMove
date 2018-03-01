@@ -1,0 +1,8 @@
+#box {
+    width: 200px;
+    height: 130px;
+    position: absolute;
+    background-image: url("PDLOGO.jpg");
+    left: 200px;
+    top: 200px;
+}

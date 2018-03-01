@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>KeyStroke Events</title>
+</head>
+
+<body>
+    <div id="box"></div>
+</body>
+<script>
+    var boxtop = 200;
+    var boxleft = 200;
+
+
+    'use strict';
+
+    document.addEventListener('keydown', (event) => {
+        const keyName = event.key;
+
+        // alert('keydown event\n\n' + 'key: ' + keyName);
+        document.getElementById("box").style.top = boxtop + "px";
+
+    });
+
+    function moveBox (event) {
+
+        if(event.keyCode == 40) {
+            top += 2;
+            box.style.top = (parseInt(boxtop) + boxtop) + "px"
+        }
+        if(event.keyCode == 38) {
+            top -= 2;
+            box.style.top = (parseInt(boxtop) - boxtop) + "px"
+        }
+        if(event.keyCode == 39) {
+            boxleft += 2;
+            box.style.left = (parseInt(boxleft) + boxleft) + "px"
+        }
+        if(event.keyCode == 37) {
+            boxleft - 2;
+            box.style.left = (parseInt(boxleft) - boxleft) + "px"
+        }
+    }
+    document.onkeydown = moveBox;
+</script>
+
+</html>
