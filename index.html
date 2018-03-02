@@ -24,21 +24,21 @@
         }
         if(event.keyCode == 38) {
             boxtop -= 2;
-            box.style.top = (parseInt(boxtop) - boxtop) + "px"
+            box.style.top =  boxtop + "px"
         }
         if(event.keyCode == 39) {
             boxleft += 2;
-            box.style.left = (parseInt(boxleft) + boxleft) + "px"
+            box.style.left =  boxleft + "px"
         }
         if(event.keyCode == 37) {
             boxleft -= 2;
-            box.style.left = (parseInt(boxleft) - boxleft) + "px"
+            box.style.left = boxleft + "px"
         }
     }
 
 
-    document.addEventListener('keydown', moveBox()) ;
-        const keyName = event.key;
+    document.addEventListener('keydown', moveBox) ;
+       
 
        
 
